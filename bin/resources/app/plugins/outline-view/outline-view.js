@@ -118,7 +118,7 @@
 							title += "\n" + tail;
 						}
 						
-						var nav = { def: def, ctx: name, ctxAfter: true, showAtTop: showAtTop };
+						var nav = { def: def, ctx: mt[1], ctxAfter: true, showAtTop: showAtTop };
 						ctx.mark(label, title, nav);
 					} else if (mt = rxPush.exec(line)) {
 						var nav = { def: def, ctx: mt[1], ctxAfter: true, showAtTop: showAtTop };
